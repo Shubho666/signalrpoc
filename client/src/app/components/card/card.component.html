@@ -1,0 +1,13 @@
+<p>card works!</p>
+<button (click)="connect()">Connect</button>
+<button (click)="sendMsg(id)">Send message to board {{id}}</button>
+
+<p>board2 works!</p>
+<!-- <<p>board works!</p> -->
+<input type="text" id="userstory" placeholder="Edit card below">
+<!-- <button (click)="sendMessage()">ok</button> -->
+<!-- <button (click)="delMessage()">ok</button> -->
+<!-- <p-toast [style]="{marginTop: '50px'}"></p-toast> --> 
+<div *ngFor= " let user of userstory">
+<mat-card>{{user}}</mat-card>
+</div>

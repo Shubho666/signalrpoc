@@ -1,0 +1,4 @@
+<div *ngFor="let item of card">
+  <button (click)="routeToCard(item)" type="button">{{item}}</button>
+</div>
+<router-outlet></router-outlet>
